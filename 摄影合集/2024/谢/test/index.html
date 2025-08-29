@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写真合集 - Test - 且曼</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --spacing: 1rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "MFLanSong_Noncommercial-Regular", system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: var(--spacing);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing);
+            padding: var(--spacing);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            aspect-ratio: 3/4;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="WechatIMG5171.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5172.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5173.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5174.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5175.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5176.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5177.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5178.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5179.jpg" alt="写真照片" loading="lazy">
+        </div>
+        <div class="gallery-item">
+            <img src="WechatIMG5180.jpg" alt="写真照片" loading="lazy">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI相关文章展示">
+    <meta name="keywords" content="AI, 文章, 且曼学院">
+    <title>AI文章 - 李时雨</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --accent-color: #6c6c6c;
+            --bg-color: #fff;
+            --card-bg: #f8f8f8;
+            --hover-color: #000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .article-excerpt {
+            color: var(--accent-color);
+            font-size: 0.95rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .article-card {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="select.html" class="back-link">← 返回首页</a>
+        
+        <header class="header">
+            <h1>AI文章</h1>
+        </header>
+
+        <main class="article-grid">
+            <a href="https://www.xiaohongshu.com/explore/68ac79dc000000001d001cc7" class="article-card" target="_blank" rel="noopener noreferrer">
+                <h2 class="article-title">Ai为什么突然不懂你了</h2>
+                <p class="article-excerpt">你问ai"吃了吗"，ai"吃的钢筋搅42号混凝土"🍜</p>
+            </a>
+
+            <a href="https://www.xiaohongshu.com/explore/68add949000000001d003e5a" class="article-card" target="_blank" rel="noopener noreferrer">
+                <h2 class="article-title">生图"提示词"来了，请查收！</h2>
+                <p class="article-excerpt">和Ai对话生图，总结下来就一句话"越规整，越细节，越好"</p>
+            </a>
+
+            <a href="https://www.xiaohongshu.com/discovery/item/68aef883000000001d002d4c" class="article-card" target="_blank" rel="noopener noreferrer">
+                <h2 class="article-title">Notebook你的最佳学习搭子</h2>
+                <p class="article-excerpt">思维导图＋强依赖文档治好了我的"笔记恐惧症"</p>
+            </a>
+
+            <a href="https://www.xiaohongshu.com/discovery/item/68a9da6a000000001d0023af" class="article-card" target="_blank" rel="noopener noreferrer">
+                <h2 class="article-title">双非｜二本 debuff叠满怎么大厂实习</h2>
+                <p class="article-excerpt">相关的硬核科普，带着大家一起冲进大厂实习🚴‍♂️</p>
+            </a>
+        </main>
+    </div>
+</body>
+</html>
